@@ -1,0 +1,272 @@
+.kol{
+	float:left;
+}
+.k1{
+	width: 8.33333333%;
+}
+.k2{
+	width: 16.66666666%;
+}
+.k3{
+	width: 24.999999%;
+}
+.k4{
+	width: 33.333332%;
+}
+.k5{
+	width: 41.666665%;
+}
+.k6{
+	width: 49.999998%;
+}
+.k7{
+	width: 58.333331%;
+}
+.k8{
+	width: 66.666664%;
+}
+.k9{
+	width: 74.999997%;
+}
+.k10{
+	width: 83.333333%;
+}
+.k11{
+	width: 91.666663%;
+}
+.k12{
+	width: 99.999996%;
+}
+/* za Header*/
+.h1{
+	font-weight: bold;
+	margin-left: 10%;
+	text-decoration: none;
+	color: black;
+}
+.menu{
+	text-align: right;
+	margin-top: 2.5%;
+}
+.menu>a{
+	text-decoration: none;
+	color: black;
+	padding: 2% 3% 2% 3%;
+	margin-right: 0.5%;
+} 
+.menu>a:hover{
+	background-color: black;
+	color: white;
+	border-radius: 3em;
+}
+.verticalLine {
+  border-left: thin solid lightgrey;
+ /* height: 100%*/
+}
+.verticalLineRight{
+	border-right: thin solid lightgrey;
+	/*height: 100%;*/
+}
+#menuToggle
+{
+  display: block;
+  position: relative;
+  top: 30px;
+  left: 45px;
+  
+  z-index: 1;
+  
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+#menuToggle a
+{
+  text-decoration: none;
+  color: #232323;
+  
+  transition: color 0.3s ease;
+}
+
+#menuToggle a:hover
+{
+	color: #4caf50;
+	border-radius: 3em;
+}
+
+#menuToggle input
+{
+  display: block;
+  width: 40px;
+  height: 32px;
+  position: absolute;
+  top: -7px;
+  left: -5px;
+  
+  cursor: pointer;
+  
+  opacity: 0; /* hide this */
+  z-index: 2; /* and place it over the hamburger */
+  
+  -webkit-touch-callout: none;
+}
+
+/*
+ * Just a quick hamburger
+ */
+#menuToggle span
+{
+  display: block;
+  width: 33px;
+  height: 4px;
+  margin-bottom: 5px;
+  position: relative;
+  
+  background: #312f2f;
+  border-radius: 5px;
+  
+  z-index: 1;
+  
+  transform-origin: 4px 0px;
+  
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              opacity 0.55s ease;
+}
+
+#menuToggle span:first-child
+{
+  transform-origin: 0% 0%;
+}
+
+#menuToggle span:nth-last-child(2)
+{
+  transform-origin: 0% 100%;
+}
+
+#menuToggle input:checked ~ span
+{
+  opacity: 1;
+  transform: rotate(45deg) translate(-2px, -1px);
+  background: #232323;
+}
+
+#menuToggle input:checked ~ span:nth-last-child(3)
+{
+  opacity: 0;
+  transform: rotate(0deg) scale(0.2, 0.2);
+}
+
+#menuToggle input:checked ~ span:nth-last-child(2)
+{
+  transform: rotate(-45deg) translate(0, -1px);
+}
+#menu
+{
+  position: absolute;
+  width: 105px;
+  height: 100%;
+  margin: -100px 0 0 -50px;
+  padding: 50px;
+  padding-top: 125px;
+  
+  background: white;
+  list-style-type: none;
+  -webkit-font-smoothing: antialiased;
+  /* to stop flickering of text in safari */
+  
+  transform-origin: 0% 0%;
+  transform: translate(-100%, 0);
+  
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+}
+
+#menu li
+{
+  padding: 10px 0;
+  font-size: 22px;
+}
+
+#menuToggle input:checked ~ ul
+{
+  transform: none;
+}
+body{
+	display: block;
+	margin: 0px ;
+	padding: 0px ;
+	font-family: courier;
+	height: 100vh;
+}
+.login-page{
+	width: 360px;
+	padding: 0% 0 0;
+	margin: auto;
+}
+.form{
+	position: relative;
+	z-index: 1;
+	background: #ffffff;
+	max-width: 360px;
+	margin: 0 auto;
+	margin-top: 25%;
+	padding: 45px;
+	text-align: center; 
+}
+.form input{
+	font-family: "Roboto", sans-serif;
+	outline: 1;
+	background: #f2f2f2;
+	width: 100%;
+	border: 0;
+	margin: 0 0 15px;
+	padding: 15px;
+	box-sizing: border-box;
+	font-size: 14px;
+}
+.form button{
+	font-family: "Roboto", sans-serif;
+	text-transform: uppercase;
+	outline: 0;
+	background: #4caf50;
+	width: 100%;
+	border: 0;
+	padding: 15px;
+	color: #ffffff;
+	font-size: 14px;
+	cursor: pointer;
+}
+.form button:hover,.form button:active{
+	background: #43a047;
+}
+.form .message{
+	margin: 15px 0 0;
+	font-size: 12px;
+}
+.form .message a{
+	color: #4caf50;
+	text-decoration: none;
+}
+
+
+
+/*Footer*/
+.footer{
+	text-align: center;
+	height: 15%;
+	width:100%;
+	margin-top: 15%;
+	display: block;
+	overflow: hidden;
+}
+.hr{
+	width: 100%;
+}
+.foot{
+	text-align: center;
+	height: 15%;
+	width:100%;
+	margin-top: 7%;
+	display: block;
+	overflow: hidden;
+}
